@@ -1,0 +1,25 @@
+﻿<Page x:Class="QuizFrontend.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuizFrontend"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid x:Name="page" Background="#FFF9F5F5" Width="779" Height="300">
+        <TextBox x:Name="xButton1Text" HorizontalAlignment="Left" Height="32" Margin="480,24,0,0" TextWrapping="Wrap" Text="Button 1 Text" VerticalAlignment="Top" Width="143"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="480,86,0,0" TextWrapping="Wrap" Text="Button 2 Text" VerticalAlignment="Top" Width="143"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="480,150,0,0" TextWrapping="Wrap" Text="Button 3 Text" VerticalAlignment="Top" Width="143" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="480,217,0,0" TextWrapping="Wrap" Text="Button 4 Text" VerticalAlignment="Top" Width="143"/>
+        <CheckBox Content="Is Correct?" HorizontalAlignment="Left" Margin="661,32,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Is Correct?" HorizontalAlignment="Left" Margin="661,225,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Is Correct?" HorizontalAlignment="Left" Margin="661,158,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Is Correct?" HorizontalAlignment="Left" Margin="661,94,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <Button x:Name="xQFinished" Content="Add" HorizontalAlignment="Left" Height="24" Margin="661,266,0,0" VerticalAlignment="Top" Width="76" Click="xQFinished_Click"/>
+        <Button x:Name="xQCanceled" Content="Cancel" HorizontalAlignment="Left" Height="24" Margin="564,266,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox x:Name="sQuestionBox" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Question..." VerticalAlignment="Center" Width="419" Height="266" TextChanged="sQuestionBox_TextChanged"/>
+
+    </Grid>
+</Page>

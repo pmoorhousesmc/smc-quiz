@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuizFrontend.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizFrontend"
+        mc:Ignorable="d"
+        Title="Window1" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" UseLayoutRounding="True">
+    <Grid ScrollViewer.HorizontalScrollBarVisibility="Visible">
+        <Grid.Style>
+            <Style/>
+        </Grid.Style>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="PageFrame" Content="Frame" HorizontalAlignment="Left" VerticalAlignment="Center" Navigated="PageFrame_Navigated" Grid.Column="2" Margin="308,0,0,0"/>
+
+    </Grid>
+</Window>
